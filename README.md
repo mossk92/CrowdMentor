@@ -3,10 +3,10 @@ Frontend coding for Crowdfunding app - backend previously completed
 
 ## Page Links
     Github Repository:
-        ?
+        https://github.com/mossk92/CrowdMentor
     
     Deployed Project (Heroku):
-        https://serene-dawn-25430.herokuapp.com
+        https://guarded-journey-80030.herokuapp.com
 
 ### Portfolio
     Due
