@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+nav {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+}
+
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+    margin: 0;       
+    font-variant: small-caps;
+    font-size: 100%;
+    font-weight: bold;  
+    color: #C3B299;
+}
+
+.logo {
+    padding: 10px;
+    max-height: 10vh;
+}
+
+nav a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #C3B299;
+    position: absolute;
+    border-radius: 25px;
+    right: 0;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}

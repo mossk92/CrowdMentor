@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+.project-card {
+    width: 100%;
+    border: 1px solid #C3B299;
+    box-shadow: 0px 0px 5px gray;
+    background-color: #C3B299;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 50px #ffffff;
+    color: #247BA0;
+    font-weight: 900;
+} 
+
+.project-card img {
+    width: 97%;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    border: 0;
+    background: #C3B299;
+    color: #ffffff;
+    width: 10%;
+    height: 30px;
+    border-radius:  20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: none;
+    font-size: 100%;
+}
+
+h3 {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    padding-left: 2%;
+    width: 98%;
+    height: 60px;
+    position: relative;
+    font-size: 150%;
+    font-weight: bold;  
+    color: #000000;
+  }
