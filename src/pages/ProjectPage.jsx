@@ -40,7 +40,7 @@ function ProjectPage() {
     const handleSubmit = async (e) => {
         e.preventDefault()
         await fetch(`
-            ${process.env.REACT_APP_API_URL}projects/${project_id}`, {
+            ${process.env.REACT_APP_API_URL}projects/${project_id}/`, {
                 method: "put",
                 headers: {
                     "Authorization": `Token ${localStorage.getItem(`token`)}`,
