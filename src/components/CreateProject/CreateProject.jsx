@@ -119,7 +119,7 @@ function CreateProject() {
           onChange={handleChange}
         />
       </div>
-      <button type="submit" onClick={handleSubmit}>Create Project</button>
+      <button type="submit" >Create Project</button>
     </form>
   );
 }
