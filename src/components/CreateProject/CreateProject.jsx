@@ -48,9 +48,12 @@ function CreateProject() {
     e.preventDefault();
     if (window.localStorage.getItem("token")) {
       postData().then((response) => {
-        console.log("response form our API ----------", response)
-        // window.localStorage.setItem('token', response.token);
-        // history.push('/');
+        if (!response.token) {
+          history.push("/404")
+        }
+        else {
+        history.push('/');
+        }
       });
     }
   };

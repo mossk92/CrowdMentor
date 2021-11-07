@@ -51,7 +51,6 @@ function LoginForm() {
         window.localStorage.setItem("token", response.token);  
         window.location = `${window.location.origin}/`  
         }
-        
     });
     };
   };

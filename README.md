@@ -7,6 +7,9 @@ Frontend coding for Crowdfunding app - backend previously completed
     
     Deployed Project (Heroku):
         https://guarded-journey-80030.herokuapp.com
+        Note: create account not working: please use following credentials:
+            Username: k8e
+            Password: k8ek8e1!
 
 ### Portfolio
     Due
@@ -39,8 +42,13 @@ Frontend coding for Crowdfunding app - backend previously completed
                 Crowdfunders: Search by their skills to find a match that they are comfortable with. They can then pledge time to assist (such as 4x 1hr sessions)
 
 ##### Features
-    ● Home Page: shows options available to public only (login / create account)
+    ● Home Page: 
+        - Without token: shows options available to public only (login / create account)
+        - With token: shows options available to users (profile page, create project, logout)
     ● Create Account: allows creation of accounts including username, name, email and biography
+    ● About: provides details and intent for the website
+    ● Login: allows authorised users to login, sends unauthorised requests to 404
+
 
 
                     Existing:
@@ -101,3 +109,4 @@ Frontend coding for Crowdfunding app - backend previously completed
     ● 404 Page:
     ● About Page:
     ● Profile Page:
+    ● Lighthouse Report:    
