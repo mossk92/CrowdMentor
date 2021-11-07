@@ -39,7 +39,7 @@ function ProjectPage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        await fetch(`
+        const response = await fetch(`
             ${process.env.REACT_APP_API_URL}projects/${project_id}/`, {
                 method: "put",
                 headers: {
@@ -56,6 +56,14 @@ function ProjectPage() {
                     location: projectData.location
                 }),
             })
+        if (window.localStorage.getItem("token")) {
+            if (response.status == 404) {
+            history.push("/404")
+            }
+            else {
+            history.push(`/projects/${project_id}/`);
+            }
+        }
     }
 
     const deleteProject = async () => {
@@ -117,7 +125,7 @@ function ProjectPage() {
                                 <input
                                 type="text"
                                 id="title"
-                                placeholder="Describe what you want"
+                                placeholder= {projectData.title}
                                 onChange={handleChange}
                                 />
                             </div>
@@ -126,7 +134,7 @@ function ProjectPage() {
                                 <textarea
                                 type="text"
                                 id="description"
-                                placeholder="Add details to describe the requirement"
+                                placeholder={projectData.description}
                                 onChange={handleChange}
                                 ></textarea>
                             </div>
@@ -135,7 +143,7 @@ function ProjectPage() {
                                 <input
                                 type="number"
                                 id="goal"
-                                placeholder="Goal (Hours)"
+                                placeholder={projectData.goal}
                                 onChange={handleChange}
                                 />
                             </div>
@@ -144,7 +152,7 @@ function ProjectPage() {
                                 <input
                                 type="url"
                                 id="image"
-                                placeholder="Image Link (URL)"
+                                placeholder={projectData.image}
                                 onChange={handleChange}
                                 />
                             </div>
@@ -153,7 +161,7 @@ function ProjectPage() {
                                 <input
                                 type="text"
                                 id="is_open"
-                                placeholder="true"
+                                placeholder={projectData.is_open}
                                 onChange={handleChange}
                                 />
                             </div>
@@ -162,7 +170,7 @@ function ProjectPage() {
                                 <input
                                 type="text"
                                 id="category"
-                                placeholder="Category"
+                                placeholder={projectData.category}
                                 onChange={handleChange}
                                 />
                             </div>
@@ -171,7 +179,7 @@ function ProjectPage() {
                                 <input
                                 type="text"
                                 id="location"
-                                placeholder="Location"
+                                placeholder={projectData.location}
                                 onChange={handleChange}
                                 />
                             </div>

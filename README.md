@@ -48,7 +48,10 @@ Frontend coding for Crowdfunding app - backend previously completed
     ● Create Account: allows creation of accounts including username, name, email and biography
     ● About: provides details and intent for the website
     ● Login: allows authorised users to login, sends unauthorised requests to 404
-    ● Create Project: allows anyone logged in to create a new project, which includes title, description, goal hours, image url, category and location    
+    ● Create Project: 
+        - allows anyone logged in to create a new project, which includes title, description, goal hours, image url, category and location    
+        - allows deletion of projects
+        - allows editing of projects
 
                     Existing:
                         ● Create Project
@@ -76,7 +79,9 @@ Frontend coding for Crowdfunding app - backend previously completed
 
 ###### Known Bugs
     ● Project Pages: 
-        Issue1: Delete function is not working -
+        Issue1: Delete function is not working - any user can delete a project
+        Issue2: Barometer to show status of pledges (tracking to goal)
+        Issue3: Editing projects links back to home page instead of back to project
     ● About Page: 
         Issue1: high level information only - want to add mroe to intice users to the app
         Issue2: Very generic with minimal styling - want to improve the CSS
