@@ -40,16 +40,6 @@ Frontend coding for Crowdfunding app - backend previously completed
         - allows editing of projects
     ● Create Pledge:
         - allows anyone logged in to create a pledge on a project - which included amount and comment
-                    
-                    
-                    
-                    Existing:
-                        ● Create Pledge
-                            - Limited only to users   
-
-                    Still to come:
-                        ● Optionality for Pledgers to organise masterclasses by sending request to a group of project owners with similar categories
-                        ● Setting goal to either time (hr) which is the default but also give option for date where a pledge has to commit all (e.g commit to assisting to meet that goal)
 
 ##### Known Bugs / Features to Come
     ● Issue 1: Project Delete function not working (any user can delete project)
