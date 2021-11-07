@@ -44,7 +44,7 @@ function CreateProject() {
     e.preventDefault();
     if (window.localStorage.getItem("token")) {
       postData().then((response) => {
-        if (!response.token) {
+        if (response.status == 404) {
           history.push("/404")
         }
         else {
