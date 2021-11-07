@@ -39,7 +39,9 @@ Frontend coding for Crowdfunding app - backend previously completed
                 Crowdfunders: Search by their skills to find a match that they are comfortable with. They can then pledge time to assist (such as 4x 1hr sessions)
 
 ##### Features
-    ● Create Account
+    ● Home Page: shows options available to public only (login / create account)
+     
+    Create Account
                     Existing:
                         ● Create Account
                             - Including Name
