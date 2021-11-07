@@ -71,13 +71,25 @@ Frontend coding for Crowdfunding app - backend previously completed
     ● Feature 10: Authroised users should be able to edit their user profile 
 
 ###### Screenshots
-    ● Home Page:
+    ● Home Page (Not Yet Logged In):
+        https://github.com/mossk92/CrowdMentor/issues/1#issue-1046692908
+    ● Home Page (Logged In):
+        https://github.com/mossk92/CrowdMentor/issues/2#issue-1046693261
     ● Create Account Page:
+        https://github.com/mossk92/CrowdMentor/issues/3#issue-1046693409
     ● LogIn Page:
+        https://github.com/mossk92/CrowdMentor/issues/4#issue-1046693490
     ● Project Page:
+        https://github.com/mossk92/CrowdMentor/issues/6#issue-1046693804
     ● Create Project Page:
+        https://github.com/mossk92/CrowdMentor/issues/7#issue-1046693876
     ● Create Pledge Page:
+        https://github.com/mossk92/CrowdMentor/issues/8#issue-1046693943
     ● 404 Page:
+        https://github.com/mossk92/CrowdMentor/issues/9#issue-1046694028
     ● About Page:
+        https://github.com/mossk92/CrowdMentor/issues/5#issue-1046693685
     ● Profile Page:
+        https://github.com/mossk92/CrowdMentor/issues/10#issue-1046694349
     ● Lighthouse Report:    
+        https://github.com/mossk92/CrowdMentor/issues/11#issue-1046694424
