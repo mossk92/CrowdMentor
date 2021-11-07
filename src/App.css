@@ -6,3 +6,10 @@
   column-gap: 3%;
   row-gap: 2%;
 }
+
+@media (max-width: 600px) {  
+  #project-list {
+    display: grid;
+    grid-template-columns: 45% 45%;
+  }
+}
