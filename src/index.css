@@ -7,6 +7,59 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 200%;
+  font-weight: bold;  
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+}
+
+h3 {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  padding-left: 2%;
+  width: 98%;
+  height: 60px;
+  position: relative;
+  font-size: 150%;
+  font-weight: bold;  
+  color: #000000;
+}
+
+h4 {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 100%;
+  font-weight: bold;
+  color: #C3B299;
+  margin: 0;
+}
+
+h5 {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 100%;
+  font-weight: normal;
+  color: #000000;
+}
+
+h6 {
+  text-align: right; 
+  color: #C3B299;
+  font-size: 100%;
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  margin-bottom: 5%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

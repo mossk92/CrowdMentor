@@ -15,11 +15,15 @@ function HomePage() {
         });
     }, []);
     return (
-        <div id="project-list">
-        {projectList.map((projectData, key) => {
-        return <ProjectCard key={key} projectData={projectData} />;
-        })}
-        </div>
+        <div>
+            <h2>Welcome to CrowdMentor</h2>
+            <div id="project-list">
+                {projectList.map((projectData, key) => {
+                return <ProjectCard key={key} projectData={projectData} />;
+                })}
+            </div>            
+        </div>       
+
     );
 }
 

@@ -69,14 +69,17 @@ function ProjectPage() {
         return (
             <div id="pageframe">
                 <h2>{projectData.title}</h2>
-                <h3>Created at: {projectData.date_created}</h3>
-                <h3>{`Status: ${projectData.is_open}`}</h3>
-                <h3>Pledges:</h3>
+                <h6>Created at: {projectData.date_created}</h6>
+                <h6>{`Status: ${projectData.is_open}`}</h6>  
+                <h4>Category: {projectData.category}</h4>
+                <h4>Location: {projectData.location}</h4>                
+                <h5>{projectData.description}</h5>
+                <h3>Pledges (Goal of {projectData.goal} hours):</h3>
                 <ul>
                     {projectData.pledges.map((pledgeData, key) => {
                         return (
                             <li key={key}>
-                            {pledgeData.amount} from {pledgeData.supporter}
+                            {pledgeData.amount} hours (supported by user {pledgeData.supporter}): {pledgeData.comment}
                             </li>
                         );
                 })}
