@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 function CreateProject() {
 
-  
+  const token = window.localStorage.getItem("token")
+
+  const [isLoggedIn, setIsLoggedIn] = useState(token)
+
   const history = useHistory();  
+
   const [projectinfo, setProjectInfo] = useState({
     title: "",
     description: "",
@@ -123,7 +127,15 @@ function CreateProject() {
           onChange={handleChange}
         />
       </div>
-      <button type="submit" >Create Project</button>
+      <div>
+        { isLoggedIn 
+          ? ( <div>
+            <button type="submit" >Create Project</button>
+          </div> ) : ( <div>
+            <Link className="buttonlink" to="/login">Login</Link>
+          </div> )
+        }
+      </div>
     </form>
   );
 }
