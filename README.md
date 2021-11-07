@@ -27,21 +27,7 @@ Frontend coding for Crowdfunding app - backend previously completed
             ● A screenshot of a project with pledges.
             ● A screenshot of the resulting page when an unauthorized user attempts to edit a project.
 
-#### App Details
-    Name:       CrowdMentor
-    Tagline:    Linking dreamers with achievers
-    Purpose:    Providing a platform to advertise development areas that 
-                users are looking to improve on (such as soft skills, 
-                leadership, physical work, technical work etc.)
-    Audience:   Project Owners - Those with specific skill sets to develop
-                Crowdfunders: Those with skills and time to mentor/tutor
-    Exchange:   Reward based – not financial, funders are volunteers
-    Example:    Project Owner: User adds a project that says they are looking 
-                to learn Python with a specific interest in being able to build 
-                a game
-                Crowdfunders: Search by their skills to find a match that they are comfortable with. They can then pledge time to assist (such as 4x 1hr sessions)
-
-##### Features
+#### Features
     ● Home Page: 
         - Without token: shows options available to public only (login / create account)
         - With token: shows options available to users (profile page, create project, logout)
@@ -52,52 +38,39 @@ Frontend coding for Crowdfunding app - backend previously completed
         - allows anyone logged in to create a new project, which includes title, description, goal hours, image url, category and location    
         - allows deletion of projects
         - allows editing of projects
-
+    ● Create Pledge:
+        - allows anyone logged in to create a pledge on a project - which included amount and comment
+                    
+                    
+                    
                     Existing:
-                        ● Create Project
-                            - Authorised User can change details
-                            - Authorised User can delete profile
-                            - Sum of all pledges
                         ● Create Pledge
-                            - Limited only to users
-                        ● Admin Page
-                            - Able to access Users
-                            - Able to access Projects
-                            - Able to access Pledges       
+                            - Limited only to users   
 
                     Still to come:
-                        ● Search functionality
-                            - By active projects
-                            - By category
-                            - By description
-                            - By location
-                        ● Way for pledgers to connect to project owners and vice versa
-                            - I.E direct message 
-                        ● Responsive design for web and mobile
                         ● Optionality for Pledgers to organise masterclasses by sending request to a group of project owners with similar categories
                         ● Setting goal to either time (hr) which is the default but also give option for date where a pledge has to commit all (e.g commit to assisting to meet that goal)
 
-###### Known Bugs
-    ● Project Pages: 
-        Issue1: Delete function is not working - any user can delete a project
-        Issue2: Barometer to show status of pledges (tracking to goal)
-        Issue3: Editing projects links back to home page instead of back to project
-    ● About Page: 
-        Issue1: high level information only - want to add mroe to intice users to the app
-        Issue2: Very generic with minimal styling - want to improve the CSS
-    ● Pledge Page: 
-        Issue1: doesn't refresh on the return to project - want the new pledge to show
-    ● Responsiveness: 
-        Issue1: No media queries, only responsive CSS terms used
-    ● Profile Page: 
-        Issue1: Page only - needs to include information about the user
-        Issue2: Authorised users should be able to delete their profile
-        Issue3: Authorised users should be able to edit their profile
-    ● CreateAccout Page: 
-        Issue1: Categories and Location have no validation - want drop down lists
+##### Known Bugs / Features to Come
+    ● Issue 1: Project Delete function not working (any user can delete project)
+    ● Issue 2: Editing projects links back to home page instead of back to project
+    ● Issue 3: Pledge page doesn't refresh on return to project (want the new pledge to show) 
+    ● Issue 4: Pledges permitted for users regardless of project ownership (you can pledge to own project) 
+    ● Issue 5: Responsiveness - needs to improve for mobile designs 
+    ● Issue 6: Profile page doesn't include any information 
 
+    ● Feature 1: Barometer on project pages to show status of pledges (tracking to goal)  
+    ● Feature 2: better 'About' page - improve information to intice users to the app 
+    ● Feature 3: improve CSS on 'About' page 
+    ● Feature 4: use drop down selection lists for categories and location 
+    ● Feature 5: Search by user function 
+    ● Feature 6: Search by project function (active, category, location, title) 
+    ● Feature 7: Allow project owners and pledgers to connect (i.e direct messages) 
+    ● Feature 8: MasterClasses - allow pledgers to organises group classes 
+    ● Feature 9: Authroised users should be able to delete their user profile 
+    ● Feature 10: Authroised users should be able to edit their user profile 
 
-####### Screenshots
+###### Screenshots
     ● Home Page:
     ● Create Account Page:
     ● LogIn Page:

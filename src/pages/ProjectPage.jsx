@@ -61,7 +61,7 @@ function ProjectPage() {
             history.push("/404")
             }
             else {
-            history.push(`/projects/${project_id}/`);
+            history.goBack()   
             }
         }
     }
@@ -104,8 +104,16 @@ function ProjectPage() {
                             </li>
                         );
                 })}
-                </ul>   
-                <Link className="buttonlink" to={`/createpledge/${project_id}`}>Pledge</Link>                   
+                </ul> 
+                <div id="buttonsummary">
+                    { isLoggedIn 
+                        ? ( <div>
+                            <Link className="buttonlink" to={`/createpledge/${project_id}`}>Pledge</Link> 
+                        </div> ) : ( <div>
+                            <Link className="buttonlink" to="/login">Login to Pledge</Link>
+                        </div> )
+                    }                    
+                </div>                    
             </div>
         );
     }
