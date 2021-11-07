@@ -40,15 +40,10 @@ Frontend coding for Crowdfunding app - backend previously completed
 
 ##### Features
     ● Home Page: shows options available to public only (login / create account)
-     
-    Create Account
+    ● Create Account: allows creation of accounts including username, name, email and biography
+
+
                     Existing:
-                        ● Create Account
-                            - Including Name
-                            - Including Biography
-                            - Date automatically generated
-                            - Authorised User can change details
-                            - Authorised User can delete profile
                         ● Create Project
                             - Limited only to users
                             - Including location
@@ -90,8 +85,10 @@ Frontend coding for Crowdfunding app - backend previously completed
         Issue1: No media queries, only responsive CSS terms used
     ● Profile Page: 
         Issue1: Page only - needs to include information about the user
+        Issue2: Authorised users should be able to delete their profile
+        Issue3: Authorised users should be able to edit their profile
     ● CreateAccout Page: 
-        Issue1: Categories and Location have no validation - want drop down lists 
+        Issue1: Categories and Location have no validation - want drop down lists
 
 
 ####### Screenshots
