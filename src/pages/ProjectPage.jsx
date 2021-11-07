@@ -3,6 +3,11 @@ import { useParams, useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function ProjectPage() {
+
+    const token = window.localStorage.getItem("token")
+
+    const [isLoggedIn, setIsLoggedIn] = useState(token)
+
     const history = useHistory()
 
     const [projectData, setProjectData] = useState({ pledges: [] });
@@ -10,8 +15,6 @@ function ProjectPage() {
     const { id: project_id } = useParams();
 
     const [isEditing, setIsEditing] = useState(false);
-
-    const token = window.localStorage.getItem("token")
     
     const [userToken, setuserToken] = useState(token)
 
@@ -68,6 +71,16 @@ function ProjectPage() {
     const ReadProject = () => {
         return (
             <div id="pageframe">
+                <div id="buttonsummary">
+                    { isLoggedIn 
+                        ? ( <div>
+                            <button id="deletebutton" onClick={deleteProject}>Delete Project</button>
+                            <button className="buttonlink" onClick={() => setIsEditing(true)}>Edit Project</button>
+                        </div> ) : ( <div>
+                            <Link to="/login">Login</Link>
+                        </div> )
+                    }                    
+                </div>
                 <h2>{projectData.title}</h2>
                 <h6>Created at: {projectData.date_created}</h6>
                 <h6>{`Status: ${projectData.is_open}`}</h6>  
@@ -93,8 +106,6 @@ function ProjectPage() {
         <div>
         { localStorage.getItem('token')
             && isEditing === false
-            && <button id="editbutton" onClick={() => setIsEditing(true)}>Edit Project</button>
-            && <button id="deletebutton" onClick={deleteProject}>Delete Project</button>
         }
             <div id="pageframe">
                 {
