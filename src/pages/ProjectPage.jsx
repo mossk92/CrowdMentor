@@ -59,7 +59,7 @@ function ProjectPage() {
     }
 
     const deleteProject = async () => {
-        await fetch(`${process.env.REACT_APP_API_URL}projects/${project_id}`, {
+        await fetch(`${process.env.REACT_APP_API_URL}projects/${project_id}/`, {
             method: "delete",
             headers: {
                 "Authorization": `Token ${localStorage.getItem('token')}`
