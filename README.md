@@ -49,8 +49,6 @@ Frontend coding for Crowdfunding app - backend previously completed
     ● About: provides details and intent for the website
     ● Login: allows authorised users to login, sends unauthorised requests to 404
 
-
-
                     Existing:
                         ● Create Project
                             - Limited only to users
