@@ -37,6 +37,10 @@ function CreateProject() {
       },
       body: JSON.stringify(projectinfo),
     });
+    console.log("Found response: ", response)
+    if (response.status==404) {
+      history.push("/404")
+    };
     return response.json();
   };
 

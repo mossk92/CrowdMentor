@@ -48,6 +48,7 @@ Frontend coding for Crowdfunding app - backend previously completed
     ● Create Account: allows creation of accounts including username, name, email and biography
     ● About: provides details and intent for the website
     ● Login: allows authorised users to login, sends unauthorised requests to 404
+    ● Create Project:    
 
                     Existing:
                         ● Create Project
